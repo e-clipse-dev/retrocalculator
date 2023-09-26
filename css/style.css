@@ -1,0 +1,173 @@
+/******************************************
+/* GENERAL
+/*******************************************/
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-align: center;
+}
+
+body {
+  background: rgb(181, 179, 177);
+}
+
+body * {
+  font-family: 'Silkscreen', sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.shadow {
+  text-shadow: 0 0.3rem black;
+}
+
+h1,
+h2,
+#zero {
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+.container {
+  display: flex;
+}
+
+.col {
+  flex-direction: column;
+  flex: 1;
+  margin: 0;
+}
+
+.col1 {
+  margin-left: 4rem;
+}
+
+.col2 {
+  margin-right: 4rem;
+}
+
+li,
+#zero {
+  font-size: 2rem;
+  height: 4rem;
+  border: 0.1rem solid rgba(50, 50, 50, 0.5);
+}
+
+#zero {
+  padding: 0.5rem 5rem;
+}
+
+li {
+  padding: 0.5rem 0;
+  margin: 0.1rem auto;
+}
+
+footer {
+  margin-top: 4rem;
+}
+
+footer * {
+  font-size: 0.6rem;
+  color: black;
+  text-decoration: none;
+  border: none;
+  display: inline-block;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/******************************************
+/* COLORS
+/*******************************************/
+
+#addThree,
+#multiplyThree {
+  background: rgb(242, 149, 167);
+}
+
+#addTwo,
+#multiplyTwo {
+  background: rgb(250, 201, 124);
+}
+
+#addOne,
+#multiplyOne {
+  background: rgb(253, 245, 144);
+}
+
+#zero {
+  background: rgb(180, 180, 180);
+}
+
+#subOne,
+#divideOne {
+  background: rgb(128, 202, 177);
+}
+
+#subTwo,
+#divideTwo {
+  background: rgb(104, 185, 230);
+}
+
+#subThree,
+#divideThree {
+  background: rgb(132, 122, 185);
+}
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+
+@media all and (max-width: 900px) {
+  ul:not(footer ul) {
+    margin: 1rem 20%;
+  }
+}
+
+@media all and (max-width: 400px) {
+  ul:not(footer ul) {
+    margin: 1rem auto;
+  }
+
+  li {
+    height: 4rem;
+  }
+}
+
+@media all and (min-width: 700px) {
+  .col1 {
+    margin-left: 15rem;
+  }
+
+  .col2 {
+    margin-right: 15rem;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  .col1 {
+    margin-left: 25rem;
+  }
+
+  .col2 {
+    margin-right: 25rem;
+  }
+}
